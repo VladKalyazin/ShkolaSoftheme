@@ -1,0 +1,2 @@
+c:\users\1user\documents\visual studio 2015\Projects\HomeWork1\HomeWork1\bin\Debug\HomeWork1.exe.config
+C:\Users\1user\Source\Repos\ShkolaSoftheme\CSharpHW\HomeWork1\HomeWork1\bin\Debug\HomeWork1.exe.config
