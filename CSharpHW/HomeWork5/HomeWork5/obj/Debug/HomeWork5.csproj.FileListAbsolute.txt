@@ -1,0 +1,6 @@
+C:\Users\1user\Source\Repos\ShkolaSoftheme\HomeWork5\HomeWork5\bin\Debug\HomeWork5.exe.config
+C:\Users\1user\Source\Repos\ShkolaSoftheme\HomeWork5\HomeWork5\bin\Debug\HomeWork5.exe
+C:\Users\1user\Source\Repos\ShkolaSoftheme\HomeWork5\HomeWork5\bin\Debug\HomeWork5.pdb
+C:\Users\1user\Source\Repos\ShkolaSoftheme\HomeWork5\HomeWork5\obj\Debug\HomeWork5.csprojResolveAssemblyReference.cache
+C:\Users\1user\Source\Repos\ShkolaSoftheme\HomeWork5\HomeWork5\obj\Debug\HomeWork5.exe
+C:\Users\1user\Source\Repos\ShkolaSoftheme\HomeWork5\HomeWork5\obj\Debug\HomeWork5.pdb
