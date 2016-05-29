@@ -1,0 +1,15 @@
+C:\Users\1user\Source\Repos\ShkolaSoftheme\HomeWork2\HomeWork2\obj\Debug\HomeWork2.csprojResolveAssemblyReference.cache
+C:\Users\1user\Source\Repos\ShkolaSoftheme\HomeWork2\HomeWork2\obj\Debug\MainWindow.g.cs
+C:\Users\1user\Source\Repos\ShkolaSoftheme\HomeWork2\HomeWork2\obj\Debug\App.g.cs
+C:\Users\1user\Source\Repos\ShkolaSoftheme\HomeWork2\HomeWork2\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\1user\Source\Repos\ShkolaSoftheme\HomeWork2\HomeWork2\obj\Debug\MainWindow.baml
+C:\Users\1user\Source\Repos\ShkolaSoftheme\HomeWork2\HomeWork2\obj\Debug\HomeWork2.csproj.GenerateResource.Cache
+C:\Users\1user\Source\Repos\ShkolaSoftheme\HomeWork2\HomeWork2\bin\Debug\NumericTypesInfo.exe.config
+C:\Users\1user\Source\Repos\ShkolaSoftheme\HomeWork2\HomeWork2\bin\Debug\NumericTypesInfo.exe
+C:\Users\1user\Source\Repos\ShkolaSoftheme\HomeWork2\HomeWork2\bin\Debug\NumericTypesInfo.pdb
+C:\Users\1user\Source\Repos\ShkolaSoftheme\HomeWork2\HomeWork2\obj\Debug\NumericTypesInfo_MarkupCompile.cache
+C:\Users\1user\Source\Repos\ShkolaSoftheme\HomeWork2\HomeWork2\obj\Debug\NumericTypesInfo_MarkupCompile.lref
+C:\Users\1user\Source\Repos\ShkolaSoftheme\HomeWork2\HomeWork2\obj\Debug\NumericTypesInfo.g.resources
+C:\Users\1user\Source\Repos\ShkolaSoftheme\HomeWork2\HomeWork2\obj\Debug\NumericTypesInfo.Properties.Resources.resources
+C:\Users\1user\Source\Repos\ShkolaSoftheme\HomeWork2\HomeWork2\obj\Debug\NumericTypesInfo.exe
+C:\Users\1user\Source\Repos\ShkolaSoftheme\HomeWork2\HomeWork2\obj\Debug\NumericTypesInfo.pdb

@@ -1,0 +1,27 @@
+﻿<Window x:Class="HomeWork2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HomeWork2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <local:ListOfTypes x:Key="TypesArray" />
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="2*" />
+        </Grid.ColumnDefinitions>
+
+        <ComboBox Grid.Column="0" Width="150" Height="20"
+                  ItemsSource="{Binding Source={StaticResource TypesArray}}" 
+                  SelectionChanged="ComboBox_SelectionChanged"/>
+
+        <TextBox Grid.Column="1" x:Name="ResultBox" Height="100" Width="250" 
+                 TextWrapping="Wrap" />
+
+
+    </Grid>
+</Window>
