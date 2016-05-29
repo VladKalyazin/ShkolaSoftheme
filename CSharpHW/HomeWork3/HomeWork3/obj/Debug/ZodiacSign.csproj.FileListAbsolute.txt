@@ -1,0 +1,6 @@
+C:\Users\1user\Source\Repos\ShkolaSoftheme\HomeWork3\HomeWork3\bin\Debug\HomeWork3.exe.config
+C:\Users\1user\Source\Repos\ShkolaSoftheme\HomeWork3\HomeWork3\bin\Debug\HomeWork3.exe
+C:\Users\1user\Source\Repos\ShkolaSoftheme\HomeWork3\HomeWork3\bin\Debug\HomeWork3.pdb
+C:\Users\1user\Source\Repos\ShkolaSoftheme\HomeWork3\HomeWork3\obj\Debug\HomeWork3.exe
+C:\Users\1user\Source\Repos\ShkolaSoftheme\HomeWork3\HomeWork3\obj\Debug\HomeWork3.pdb
+C:\Users\1user\Source\Repos\ShkolaSoftheme\HomeWork3\HomeWork3\obj\Debug\ZodiacSign.csprojResolveAssemblyReference.cache

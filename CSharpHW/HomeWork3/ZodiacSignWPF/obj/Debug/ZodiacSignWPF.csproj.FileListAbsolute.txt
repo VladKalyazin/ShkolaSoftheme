@@ -1,0 +1,14 @@
+C:\Users\1user\Source\Repos\ShkolaSoftheme\HomeWork3\ZodiacSignWPF\bin\Debug\ZodiacSignWPF.exe.config
+C:\Users\1user\Source\Repos\ShkolaSoftheme\HomeWork3\ZodiacSignWPF\bin\Debug\ZodiacSignWPF.exe
+C:\Users\1user\Source\Repos\ShkolaSoftheme\HomeWork3\ZodiacSignWPF\bin\Debug\ZodiacSignWPF.pdb
+C:\Users\1user\Source\Repos\ShkolaSoftheme\HomeWork3\ZodiacSignWPF\obj\Debug\ZodiacSignWPF.csprojResolveAssemblyReference.cache
+C:\Users\1user\Source\Repos\ShkolaSoftheme\HomeWork3\ZodiacSignWPF\obj\Debug\MainWindow.g.cs
+C:\Users\1user\Source\Repos\ShkolaSoftheme\HomeWork3\ZodiacSignWPF\obj\Debug\App.g.cs
+C:\Users\1user\Source\Repos\ShkolaSoftheme\HomeWork3\ZodiacSignWPF\obj\Debug\ZodiacSignWPF_MarkupCompile.cache
+C:\Users\1user\Source\Repos\ShkolaSoftheme\HomeWork3\ZodiacSignWPF\obj\Debug\ZodiacSignWPF_MarkupCompile.lref
+C:\Users\1user\Source\Repos\ShkolaSoftheme\HomeWork3\ZodiacSignWPF\obj\Debug\MainWindow.baml
+C:\Users\1user\Source\Repos\ShkolaSoftheme\HomeWork3\ZodiacSignWPF\obj\Debug\ZodiacSignWPF.g.resources
+C:\Users\1user\Source\Repos\ShkolaSoftheme\HomeWork3\ZodiacSignWPF\obj\Debug\ZodiacSignWPF.Properties.Resources.resources
+C:\Users\1user\Source\Repos\ShkolaSoftheme\HomeWork3\ZodiacSignWPF\obj\Debug\ZodiacSignWPF.csproj.GenerateResource.Cache
+C:\Users\1user\Source\Repos\ShkolaSoftheme\HomeWork3\ZodiacSignWPF\obj\Debug\ZodiacSignWPF.exe
+C:\Users\1user\Source\Repos\ShkolaSoftheme\HomeWork3\ZodiacSignWPF\obj\Debug\ZodiacSignWPF.pdb

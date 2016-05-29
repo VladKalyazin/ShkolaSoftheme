@@ -1,0 +1,40 @@
+﻿<Window x:Class="ZodiacSignWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZodiacSignWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525"
+        Loaded="Window_Loaded">
+    <Window.Resources>
+        <BitmapImage x:Key="ZodiacsImage" UriSource="images/ZodiacSigns.png" />
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="2*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+
+        <DatePicker Grid.Column="0" Grid.Row="0"
+                    SelectedDateChanged="DatePicker_SelectedDateChanged" 
+                    VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+        <StackPanel Grid.Column="0" Grid.Row="1">
+            <TextBlock Text="Age" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            <TextBox x:Name="AgeDisplay" Width="100" Margin="10" 
+                     VerticalAlignment="Center" HorizontalAlignment="Center" />
+            <TextBlock Text="Zodiac Sign" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            <TextBox x:Name="ZodiacTextDisplay" Width="100" Margin="10"
+                     VerticalAlignment="Center" HorizontalAlignment="Center" />
+        </StackPanel>
+        
+        <Image x:Name="ZodiacImageDisplay" Grid.Column="1" Grid.Row="0" Grid.RowSpan="2"
+                 Width="200" Height="200" />
+
+    </Grid>
+</Window>
