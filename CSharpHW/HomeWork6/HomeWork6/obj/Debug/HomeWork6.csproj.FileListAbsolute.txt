@@ -1,0 +1,14 @@
+C:\Users\1user\Source\Repos\ShkolaSoftheme\HomeWork6\HomeWork6\bin\Debug\HomeWork6.exe.config
+C:\Users\1user\Source\Repos\ShkolaSoftheme\HomeWork6\HomeWork6\bin\Debug\HomeWork6.exe
+C:\Users\1user\Source\Repos\ShkolaSoftheme\HomeWork6\HomeWork6\bin\Debug\HomeWork6.pdb
+C:\Users\1user\Source\Repos\ShkolaSoftheme\HomeWork6\HomeWork6\obj\Debug\HomeWork6.csprojResolveAssemblyReference.cache
+C:\Users\1user\Source\Repos\ShkolaSoftheme\HomeWork6\HomeWork6\obj\Debug\MainWindow.g.cs
+C:\Users\1user\Source\Repos\ShkolaSoftheme\HomeWork6\HomeWork6\obj\Debug\App.g.cs
+C:\Users\1user\Source\Repos\ShkolaSoftheme\HomeWork6\HomeWork6\obj\Debug\HomeWork6_MarkupCompile.cache
+C:\Users\1user\Source\Repos\ShkolaSoftheme\HomeWork6\HomeWork6\obj\Debug\HomeWork6_MarkupCompile.lref
+C:\Users\1user\Source\Repos\ShkolaSoftheme\HomeWork6\HomeWork6\obj\Debug\MainWindow.baml
+C:\Users\1user\Source\Repos\ShkolaSoftheme\HomeWork6\HomeWork6\obj\Debug\HomeWork6.g.resources
+C:\Users\1user\Source\Repos\ShkolaSoftheme\HomeWork6\HomeWork6\obj\Debug\HomeWork6.Properties.Resources.resources
+C:\Users\1user\Source\Repos\ShkolaSoftheme\HomeWork6\HomeWork6\obj\Debug\HomeWork6.csproj.GenerateResource.Cache
+C:\Users\1user\Source\Repos\ShkolaSoftheme\HomeWork6\HomeWork6\obj\Debug\HomeWork6.exe
+C:\Users\1user\Source\Repos\ShkolaSoftheme\HomeWork6\HomeWork6\obj\Debug\HomeWork6.pdb
