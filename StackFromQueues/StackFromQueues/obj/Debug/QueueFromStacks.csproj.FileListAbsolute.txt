@@ -1,6 +1,0 @@
-c:\users\1\documents\visual studio 2015\Projects\StackFromQueues\StackFromQueues\obj\Debug\QueueFromStacks.csprojResolveAssemblyReference.cache
-c:\users\1\documents\visual studio 2015\Projects\StackFromQueues\StackFromQueues\bin\Debug\StackFromQueues.exe.config
-c:\users\1\documents\visual studio 2015\Projects\StackFromQueues\StackFromQueues\bin\Debug\StackFromQueues.exe
-c:\users\1\documents\visual studio 2015\Projects\StackFromQueues\StackFromQueues\bin\Debug\StackFromQueues.pdb
-c:\users\1\documents\visual studio 2015\Projects\StackFromQueues\StackFromQueues\obj\Debug\StackFromQueues.exe
-c:\users\1\documents\visual studio 2015\Projects\StackFromQueues\StackFromQueues\obj\Debug\StackFromQueues.pdb
