@@ -45,8 +45,6 @@ namespace QueueFromStacks
                 Console.WriteLine(q.Dequeue());
 
             Console.ReadKey();
-
-
         }
     }
 }
