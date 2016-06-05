@@ -7,9 +7,25 @@ using System.Collections;
 
 namespace QueueFromStacks
 {
-    public class QueueFromStack
+    public interface IQueue
+    {
+        int Count { get; }
+
+        void Enqueue(object obj);
+        object Dequeue();
+    }
+
+    public class QueueFromStack : IQueue
     {
         private Stack Tail, Head;
+
+        public int Count
+        {
+            get
+            {
+                return Tail.Count + Head.Count;
+            }
+        }
 
         public QueueFromStack()
         {
@@ -26,6 +42,8 @@ namespace QueueFromStacks
         {
             if (Head.Count == 0)
             {
+                if (Tail.Count == 0)
+                    return null;
                 while (Tail.Count > 0)
                     Head.Push(Tail.Pop());
             }
@@ -38,10 +56,18 @@ namespace QueueFromStacks
         static void Main(string[] args)
         {
             QueueFromStack q = new QueueFromStack();
-            for (int i = 0; i < 10; i++)
+            int i = 0;
+            for (i = 0; i < 10; i++)
                 q.Enqueue(i);
 
-            for (int i = 0; i < 10; i++)
+            Console.WriteLine(q.Dequeue());
+            Console.WriteLine(q.Dequeue());
+            Console.WriteLine();
+
+            for (i = 0; i < 10; i++)
+                q.Enqueue(i);
+
+            while (q.Count > 0)
                 Console.WriteLine(q.Dequeue());
 
             Console.ReadKey();

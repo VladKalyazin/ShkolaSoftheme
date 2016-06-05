@@ -5,6 +5,15 @@ VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueueFromStacks", "QueueFromStacks\QueueFromStacks.csproj", "{0F333247-79FA-436D-9D7B-CB0098C42D99}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeSort", "MergeSort\MergeSort.csproj", "{DB5CACDB-5D0F-4B5D-9E9E-DCA6D04FCF82}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F18F272D-B527-44D0-B21E-77224A17EC60}"
+	ProjectSection(SolutionItems) = preProject
+		IncreasingOrderOfGrowth.jpg = IncreasingOrderOfGrowth.jpg
+		TimeAnalysis for MergeSort (part2).png = TimeAnalysis for MergeSort (part2).png
+		TimeAnalysis for MergeSort.png = TimeAnalysis for MergeSort.png
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +24,10 @@ Global
 		{0F333247-79FA-436D-9D7B-CB0098C42D99}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F333247-79FA-436D-9D7B-CB0098C42D99}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F333247-79FA-436D-9D7B-CB0098C42D99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB5CACDB-5D0F-4B5D-9E9E-DCA6D04FCF82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB5CACDB-5D0F-4B5D-9E9E-DCA6D04FCF82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB5CACDB-5D0F-4B5D-9E9E-DCA6D04FCF82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB5CACDB-5D0F-4B5D-9E9E-DCA6D04FCF82}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
