@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Car", "Car\Car.csproj", "{4262E4CF-67AB-4860-84F6-532D62679F14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Human", "Human\Human.csproj", "{B8FC6137-1CE8-474B-B21B-078E53962729}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShapeDescriptor", "ShapeDescriptor\ShapeDescriptor.csproj", "{77B24CDB-243B-4C03-B82A-75DF23B4EEEC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4262E4CF-67AB-4860-84F6-532D62679F14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4262E4CF-67AB-4860-84F6-532D62679F14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4262E4CF-67AB-4860-84F6-532D62679F14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4262E4CF-67AB-4860-84F6-532D62679F14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8FC6137-1CE8-474B-B21B-078E53962729}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8FC6137-1CE8-474B-B21B-078E53962729}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8FC6137-1CE8-474B-B21B-078E53962729}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8FC6137-1CE8-474B-B21B-078E53962729}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77B24CDB-243B-4C03-B82A-75DF23B4EEEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77B24CDB-243B-4C03-B82A-75DF23B4EEEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77B24CDB-243B-4C03-B82A-75DF23B4EEEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77B24CDB-243B-4C03-B82A-75DF23B4EEEC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
