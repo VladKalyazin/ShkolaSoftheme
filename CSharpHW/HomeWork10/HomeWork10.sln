@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindUnpair", "FindUnpair\FindUnpair.csproj", "{F1D5C994-39A2-4E7F-B9DC-E200831B7B8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeSort", "MergeSort\MergeSort.csproj", "{80B25D34-2326-42CD-848A-E7C22E7F90CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayMethods", "ArrayMethods\ArrayMethods.csproj", "{272CA610-B1A5-41FF-93B0-5512DFDDB296}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F1D5C994-39A2-4E7F-B9DC-E200831B7B8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1D5C994-39A2-4E7F-B9DC-E200831B7B8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1D5C994-39A2-4E7F-B9DC-E200831B7B8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1D5C994-39A2-4E7F-B9DC-E200831B7B8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80B25D34-2326-42CD-848A-E7C22E7F90CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80B25D34-2326-42CD-848A-E7C22E7F90CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80B25D34-2326-42CD-848A-E7C22E7F90CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80B25D34-2326-42CD-848A-E7C22E7F90CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{272CA610-B1A5-41FF-93B0-5512DFDDB296}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{272CA610-B1A5-41FF-93B0-5512DFDDB296}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{272CA610-B1A5-41FF-93B0-5512DFDDB296}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{272CA610-B1A5-41FF-93B0-5512DFDDB296}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
