@@ -41,6 +41,29 @@ namespace BinaryTreeSort
             return result;
         }
 
+        public static void TopDown<T>(List<T> array)
+            where T : IComparable<T>
+        {
+            _TopDown(array, 0, array.Count - 1);
+        }
+
+        private static void _TopDown<T>(List<T> array, int begin, int end)
+            where T : IComparable<T>
+        {
+            int length = end - begin + 1;
+            if (length > 1)
+            {
+                int leftEnd = end - length / 2;
+                _TopDown(array, begin, leftEnd);
+                _TopDown(array, leftEnd + 1, end);
+                Merge(array, begin, leftEnd, leftEnd + 1, end);
+            }
+            else
+            {
+                Merge(array, begin, begin, end, end);
+            }
+        }
+
         private static void Merge<T>(List<T> array, int leftBegin, int leftEnd, int rightBegin, int rightEnd)
             where T: IComparable<T>
         {

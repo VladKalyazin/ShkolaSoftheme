@@ -3,80 +3,106 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Diagnostics;
 
 namespace BinaryTreeSort
 {
     class Program
     {
-        private const int MinArrayLength = 1000;
-        private const int MaxArrayLength = 10000000;
-        private const int CountOfIterations = 20;
+        private const int MinArrayLength = 10;
+        private const int MaxArrayLength = 1000000;
+        private const int CountOfIterations = 1000;
+        private const int ArraysCount = 10;
 
         static void Main(string[] args)
         {
             Random ArrayGenerator = new Random();
-            DateTime StartTime, FinishTime;
+            var SortTimer = new Stopwatch();
             double AverageTime, TimeForAlgorithm;
 
-            for (int ArrayLength = MinArrayLength; ArrayLength < MaxArrayLength; ArrayLength *= 4)
+            for (int ArrayLength = MinArrayLength; ArrayLength < MaxArrayLength; ArrayLength *= 2)
             {
                 Console.WriteLine($"Array length = {ArrayLength}");
-                List<double> TimesForMergeSort = new List<double>(CountOfIterations);
+                List<double> TimesForBottomUpMergeSort = new List<double>(CountOfIterations);
+                List<double> TimesForTopDownMergeSort = new List<double>(CountOfIterations);
                 List<double> TimesForBinaryTreeSort = new List<double>(CountOfIterations);
                 List<double> TimesForQuickSort = new List<double>(CountOfIterations);
-                List<double> TimesForIntroSort = new List<double>(CountOfIterations);
+                List<double> TimesForQuickInsertSort = new List<double>(CountOfIterations);
+                List<double> TimesForInsertionSort = new List<double>(CountOfIterations);
+                //List<double> TimesForIntroSort = new List<double>(CountOfIterations);
                 for (int SameLengthIteration = 0; SameLengthIteration < CountOfIterations; SameLengthIteration++)
                 {
-                    List<int> array = new List<int>(ArrayLength);
-                    List<int> array2 = new List<int>(ArrayLength);
-                    List<int> array3 = new List<int>(ArrayLength);
-                    List<int> array4 = new List<int>(ArrayLength);
+                    List<List<int>> arraysList = new List<List<int>>();
+                    for (int j = 0; j < ArraysCount; j++)
+                        arraysList.Add(new List<int>(ArrayLength));
                     for (int i = 0; i < ArrayLength; i++)
                     {
                         int randValue = ArrayGenerator.Next(ArrayLength);
-                        array.Add(randValue);
-                        array2.Add(randValue);
-                        array3.Add(randValue);
-                        array4.Add(randValue);
+                        for (int j = 0; j < ArraysCount; j++)
+                            arraysList[j].Add(randValue);
                     }
 
-                    StartTime = DateTime.Now;
-                    MergeSort.BottomUp(array);
-                    FinishTime = DateTime.Now;
-                    TimeForAlgorithm = (FinishTime - StartTime).TotalMilliseconds;
+                    SortTimer.Restart();
+                    MergeSort.BottomUp(arraysList[0]);
+                    SortTimer.Stop();
+                    TimeForAlgorithm = SortTimer.Elapsed.TotalMilliseconds;
                     if (TimeForAlgorithm > 0)
-                        TimesForMergeSort.Add(TimeForAlgorithm);
+                        TimesForBottomUpMergeSort.Add(TimeForAlgorithm);
 
-                    StartTime = DateTime.Now;
-                    SortingBinaryTree.Sort(array2);
-                    FinishTime = DateTime.Now;
-                    TimeForAlgorithm = (FinishTime - StartTime).TotalMilliseconds;
+                    SortTimer.Restart();
+                    MergeSort.TopDown(arraysList[1]);
+                    SortTimer.Stop();
+                    TimeForAlgorithm = SortTimer.Elapsed.TotalMilliseconds;
+                    if (TimeForAlgorithm > 0)
+                        TimesForTopDownMergeSort.Add(TimeForAlgorithm);
+
+                    SortTimer.Restart();
+                    SortingBinaryTree.Sort(arraysList[2]);
+                    SortTimer.Stop();
+                    TimeForAlgorithm = SortTimer.Elapsed.TotalMilliseconds;
                     if (TimeForAlgorithm > 0)
                         TimesForBinaryTreeSort.Add(TimeForAlgorithm);
 
-                    StartTime = DateTime.Now;
-                    QuickSort.LomutoSort(array3);
-                    FinishTime = DateTime.Now;
-                    TimeForAlgorithm = (FinishTime - StartTime).TotalMilliseconds;
+                    SortTimer.Restart();
+                    QuickSort.LomutoSort(arraysList[3]);
+                    SortTimer.Stop();
+                    TimeForAlgorithm = SortTimer.Elapsed.TotalMilliseconds;
                     if (TimeForAlgorithm > 0)
                         TimesForQuickSort.Add(TimeForAlgorithm);
 
-                    StartTime = DateTime.Now;
-                    QuickSort.IntroSort(array4);
-                    FinishTime = DateTime.Now;
-                    TimeForAlgorithm = (FinishTime - StartTime).TotalMilliseconds;
+                    SortTimer.Restart();
+                    QuickSort.WithInsertionSort(arraysList[4]);
+                    SortTimer.Stop();
+                    TimeForAlgorithm = SortTimer.Elapsed.TotalMilliseconds;
                     if (TimeForAlgorithm > 0)
-                        TimesForIntroSort.Add(TimeForAlgorithm);
+                        TimesForQuickInsertSort.Add(TimeForAlgorithm);
+
+                    if (ArrayLength < 1000)
+                    {
+                        SortTimer.Restart();
+                        InsertionSort.Sort(arraysList[5]);
+                        SortTimer.Stop();
+                        TimeForAlgorithm = SortTimer.Elapsed.TotalMilliseconds;
+                        if (TimeForAlgorithm > 0)
+                            TimesForInsertionSort.Add(TimeForAlgorithm);
+                    }
                 }
 
                 AverageTime = 0;
-                foreach (var time in TimesForMergeSort)
+                foreach (var time in TimesForBottomUpMergeSort)
                     AverageTime += time;
-                AverageTime /= TimesForMergeSort.Count;
+                AverageTime /= TimesForBottomUpMergeSort.Count;
 
                 Console.WriteLine("Average time for BottomUp Merge sort (in ms):");
                 Console.WriteLine(AverageTime);
 
+                AverageTime = 0;
+                foreach (var time in TimesForTopDownMergeSort)
+                    AverageTime += time;
+                AverageTime /= TimesForTopDownMergeSort.Count;
+
+                Console.WriteLine("Average time for TopDown Merge sort (in ms):");
+                Console.WriteLine(AverageTime);
 
                 AverageTime = 0;
                 foreach (var time in TimesForBinaryTreeSort)
@@ -95,12 +121,23 @@ namespace BinaryTreeSort
                 Console.WriteLine(AverageTime);
 
                 AverageTime = 0;
-                foreach (var time in TimesForIntroSort)
+                foreach (var time in TimesForQuickInsertSort)
                     AverageTime += time;
-                AverageTime /= TimesForIntroSort.Count;
+                AverageTime /= TimesForQuickInsertSort.Count;
 
-                Console.WriteLine("Average time for IntroSort (in ms):");
+                Console.WriteLine("Average time for QuickSort hybrid with InsertionSort (in ms):");
                 Console.WriteLine(AverageTime);
+
+                if (ArrayLength < 1000)
+                {
+                    AverageTime = 0;
+                    foreach (var time in TimesForInsertionSort)
+                        AverageTime += time;
+                    AverageTime /= TimesForInsertionSort.Count;
+
+                    Console.WriteLine("Average time for InsertionSort (in ms):");
+                    Console.WriteLine(AverageTime);
+                }
 
                 Console.WriteLine();
             }
