@@ -10,7 +10,7 @@ namespace BinaryTreeSort
     class Program
     {
         private const int MinArrayLength = 10;
-        private const int MaxArrayLength = 1000000;
+        private const int MaxArrayLength = 1000;
         private const int CountOfIterations = 1000;
         private const int ArraysCount = 10;
 
@@ -20,7 +20,7 @@ namespace BinaryTreeSort
             var SortTimer = new Stopwatch();
             double AverageTime, TimeForAlgorithm;
 
-            for (int ArrayLength = MinArrayLength; ArrayLength < MaxArrayLength; ArrayLength *= 2)
+            for (int ArrayLength = MinArrayLength; ArrayLength < MaxArrayLength; ArrayLength += ArrayLength / 2)
             {
                 Console.WriteLine($"Array length = {ArrayLength}");
                 List<double> TimesForBottomUpMergeSort = new List<double>(CountOfIterations);
