@@ -20,6 +20,11 @@ namespace Collections
                     return false;
                 return Key.Equals(item.Key);
             }
+
+            public override int GetHashCode()
+            {
+                return base.GetHashCode();
+            }
         }
 
         private HashSet<_Item<TKey, TValue>> _Items = new HashSet<_Item<TKey, TValue>>();
