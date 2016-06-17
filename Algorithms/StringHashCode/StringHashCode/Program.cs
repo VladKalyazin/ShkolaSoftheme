@@ -28,7 +28,7 @@ namespace StringHashCode
             {
                 if (input.Length > MaxStringLength)
                     return;
-                for (char c = 'a'; c < 'z'; c++)
+                for (char c = MinChar; c < MaxChar; c++)
                 {
                     if (data.isDone)
                         return;
@@ -55,7 +55,7 @@ namespace StringHashCode
         static void Main(string[] args)
         {
             var finder = new StringFinder();
-            finder.Find("", new RecurtionData());
+            //finder.Find("", new RecurtionData());
 
             Console.WriteLine("adaaa".GetHashCode());
             Console.WriteLine("acaaaa".GetHashCode());
