@@ -58,11 +58,11 @@ namespace HashSort
                         if (TimeForAlgorithm > 0)
                             ElapsedTimes[sorting.Key].Add(TimeForAlgorithm);
 
-                        /*for (int i = 1; i < arraysList[iterator].Count; i++)
+                        for (int i = 1; i < arraysList[iterator].Count; i++)
                         {
                             if (arraysList[iterator][i] < arraysList[iterator][i - 1])
                                 throw new Exception("Invalid sorting algorithm.");
-                        }*/
+                        }
 
                         iterator++;
                     }

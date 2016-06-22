@@ -36,20 +36,22 @@ namespace HashSort
                 int leftIndex = (index + 1) * 2 - 1;
                 int rightIndex = (index + 1) * 2;
 
-                if (leftIndex < _Length && array[leftIndex] > array[index])
+                if (rightIndex < _Length)
+                {
+                    int maxIndex = array[leftIndex] > array[rightIndex] ? leftIndex : rightIndex;
+                    if (array[maxIndex] > array[index])
+                    {
+                        Swap(array, maxIndex, index);
+                        index = maxIndex;
+                        continue;
+                    }
+                } else if (leftIndex < _Length && array[leftIndex] > array[index])
                 {
                     Swap(array, leftIndex, index);
                     index = leftIndex;
-                } 
-                else if (rightIndex < _Length && array[rightIndex] > array[index])
-                {
-                    Swap(array, rightIndex, index);
-                    index = rightIndex;
+                    continue;
                 }
-                else
-                {
-                    isDone = true;
-                }
+                isDone = true;
             }
         }
 
