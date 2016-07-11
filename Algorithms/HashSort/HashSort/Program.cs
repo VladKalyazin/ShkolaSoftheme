@@ -18,8 +18,9 @@ namespace HashSort
             var sortings = new Dictionary<string, Action<List<int>>>();
 
             sortings.Add("Hash sort", HashSort.Sort);
-            sortings.Add("Quick sort", QuickSort.LomutoSort);
-            sortings.Add("Heap sort", HeapSort.Sort);
+            sortings.Add("Hash sort (TPL)", HashSort.Sort_TPL);
+            //sortings.Add("Quick sort", QuickSort.LomutoSort);
+            //sortings.Add("Heap sort", HeapSort.Sort);
             sortings.Add(".NET library sort", LibrarySort);
 
             // call static ctor
@@ -29,7 +30,20 @@ namespace HashSort
                 pair.Value.Invoke(startList);
             }
 
-            var data = SortingsTester.GetTestAnalysis(sortings);
+            Dictionary<string, List<Tuple<int, double>>> data;
+
+            data = SortingsTester.GetTestAnalysis(sortings);
+
+            /*try
+            {
+                data = SortingsTester.GetTestAnalysis(sortings);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                Console.ReadLine();
+                return;
+            }*/
 
             foreach (var sortDataPair in data)
             {

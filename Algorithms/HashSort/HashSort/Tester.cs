@@ -9,9 +9,9 @@ namespace HashSort
 {
     public static class SortingsTester
     {
-        public static int MinArrayLength { get; set; } = 20;
+        public static int MinArrayLength { get; set; } = 1000;
         public static int MaxArrayLength { get; set; } = 1000000;
-        public static int CountOfSortings { get; set; } = 50;
+        public static int CountOfSortings { get; set; } = 3;
 
         public static Dictionary<string, List<Tuple<int, double>>> GetTestAnalysis(Dictionary<string, Action<List<int>>> Sortings)
         {
@@ -33,6 +33,8 @@ namespace HashSort
 
             for (int ArrayLength = MinArrayLength; ArrayLength < MaxArrayLength; ArrayLength += ArrayLength / 2)
             {
+                Console.WriteLine(ArrayLength);
+
                 foreach (string key in Sortings.Keys)
                     ElapsedTimes[key].Clear();
 
@@ -61,7 +63,7 @@ namespace HashSort
                         for (int i = 1; i < arraysList[iterator].Count; i++)
                         {
                             if (arraysList[iterator][i] < arraysList[iterator][i - 1])
-                                throw new Exception("Invalid sorting algorithm.");
+                                throw new Exception($"Invalid sorting algorithm - {sorting.Key}");
                         }
 
                         iterator++;
